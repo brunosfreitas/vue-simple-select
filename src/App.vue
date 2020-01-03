@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="vaxinlife-vue">
     <VaxinlifeMap/>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import VaxinlifeMap from './components/Vaxinlife-map.vue'
 
 export default {
-  name: 'app',
+  name: 'vaxinlife-vue',
   components: {
     VaxinlifeMap
   }
@@ -16,12 +16,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#vaxinlife-vue {
   margin-top: 60px;
 }
 </style>
