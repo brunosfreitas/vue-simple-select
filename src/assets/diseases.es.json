@@ -1,0 +1,285 @@
+{
+  "observation": "Consulte con el profesional de la salud cuales vacunas son indicadas de acuerdo con tu condición individual, así como las recomendaciones del Ministerio de Salud al viajero.",
+  "disease_label": "Vacuna contra",
+  "transmission_label": "Transmisión",
+  "data": [
+    {
+      "country": "Brasil",
+      "references": [1, 2],
+      "rate": "low",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordedura de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        {
+          "name": "Poliomielitis",
+          "transmission": "Contacto con gérmenes"
+        }
+      ]
+    },
+    {
+      "country": "Argentina",
+      "references": [3, 4],
+      "rate": "medium",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        { "name": "Neumococo", "transmission": "Contacto con gérmenes" }
+      ]
+    },
+    {
+      "country": "Bolivia",
+      "references": [5, 6],
+      "rate": "high",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        }
+      ]
+    },
+    {
+      "country": "Colombia",
+      "references": [7, 8],
+      "rate": "high",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        }
+      ]
+    },
+    {
+      "country": "Peru",
+      "references": [9, 10],
+      "rate": "high",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        }
+      ]
+    },
+    {
+      "country": "Paraguay",
+      "references": [11, 12],
+      "rate": "high",
+      "diseases": [
+        { "name": "Fiebre Amarilla", "transmission": "Mosquito" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        }
+      ]
+    },
+    {
+      "country": "EU.UU",
+      "references": [13],
+      "rate": "high",
+      "diseases": [
+        { "name": "Rotavirus", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        }
+      ]
+    },
+    {
+      "country": "Mexico",
+      "references": [14, 15],
+      "rate": "high",
+      "diseases": [
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        { "name": "Meningococo", "transmission": "Contacto con gérmenes" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        { "name": "Poliomielitis", "transmission": "Contacto con gérmenes" }
+      ]
+    },
+    {
+      "country": "Alemania",
+      "references": [16, 17],
+      "rate": "high",
+      "diseases": [
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        { "name": "Poliomielitis", "transmission": "Contacto con gérmenes" },
+        { "name": "Encefalitis", "transmission": "Picadura de garrapata" }
+      ]
+    },
+    {
+      "country": "Francia",
+      "references": [18],
+      "rate": "high",
+      "diseases": [
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        { "name": "Poliomielitis", "transmission": "Contacto con gérmenes" }
+      ]
+    },
+    {
+      "country": "España",
+      "references": [19, 20],
+      "rate": "high",
+      "diseases": [
+        {
+          "name": "Sarampión, Rubeola y Paperas",
+          "transmission": "Contacto con gérmenes"
+        },
+        { "name": "Influenza", "transmission": "Contacto con gérmenes" },
+        { "name": "Hepatitis A", "transmission": "Alimentos y agua" },
+        {
+          "name": "Hepatitis B",
+          "transmission": "Contacto con sangre y fluidos corporales"
+        },
+        { "name": "Fiebre Tifoidea", "transmission": "Alimentos y agua" },
+        { "name": "Rabia", "transmission": "Mordida de animal" },
+        {
+          "name": "Difteria, Tétano, Pertussis",
+          "transmission": "Contacto con superficie contaminada (Tétano), contacto con gérmenes (pertussis y difteria)"
+        },
+        { "name": "Poliomielitis", "transmission": "Contacto con gérmenes" }
+      ]
+    }
+  ]
+}

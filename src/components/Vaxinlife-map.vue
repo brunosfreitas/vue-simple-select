@@ -4,10 +4,10 @@
       <!-- Jumbo -->
       <div class="col-12 col-lg-4 jumbotron bg-light rounded">
         <div class="form-group px-1">
-          <label for="selectCountryVax" class="text-muted lead">País</label>
+          <label for="selectCountryVax" class="text-muted lead">{{selectCountryLabel}}</label>
           <!-- Select -->
           <select class="form-control shadow-sm" id="selectCountryVax" v-model="selectedCountry">
-            <option v-for="(country, index) in options" :value="country" :key="index">{{country}}</option>
+            <option v-for="(country, index) in coutriesOptions" :value="country" :key="index">{{country}}</option>
           </select>
           <!-- Select -->
         </div>
@@ -18,15 +18,13 @@
         <!-- Infos -->
         <transition-group name="vaxinlife-map__list" tag="div" mode="out-in">
           <div v-for="infoCountry in selectedInfo" :key="infoCountry.country">
-            <h1 class="text-muted pb-3 font-weight-light">{{infoCountry.country}}</h1>
+            <h1 class="text-muted pb-3 font-weight-light">{{infoCountry.country}}<sup class="text-black-50">{{referencesToString(infoCountry.references)}}</sup></h1>
+            <VaxinlifeTable :data="infoCountry.diseases" :diseaseLabel="diseaseLabel" :transmissionLabel="transmissionLabel"></VaxinlifeTable>    
+            <small>*{{observation}}</small>
+          </div>
 
-            <template v-for="disease in infoCountry.diseases">
-              <div :key="disease.name" class="pb-3">
-                <span :class="selectedRateColor(disease.rate)">{{disease.rate}}</span>
-                <p class="lead">{{disease.name}}</p>
-                <p>{{disease.info}}</p>
-              </div>
-            </template>
+          <div v-if="!selectedInfo" key="no_selected_country">
+            <h2 class="lead">{{emptySelectionLabel}}</h2>
           </div>
         </transition-group>
         <!-- Infos -->
@@ -36,76 +34,48 @@
 </template>
 
 <script>
+
+import infos_json from "../assets/diseases.es.json";
+import VaxinlifeTable from "./Vaxinlife-table";
+
 export default {
   name: "Vaxinlife-map",
+  components: { VaxinlifeTable },
   props: {
-    msg: String
+    msg: String,
+    selectCountryLabel: {
+      type: String,
+      default: "Pais"
+    },
+    emptySelectionLabel: {
+      type: String, 
+      default: 'Seleccione un país al lado para más información.'
+    }
   },
   data() {
     return {
-      options: ["Brasil", "Argentina", "Chile"],
-      infos: [
-        {
-          country: "Brasil",
-          rate: 'low',
-          diseases: [
-            {
-              rate: "low",
-              name: "Et pariatur enim mollit dolore.",
-              info: "Ad eu duis irure ad."
-            }
-          ]
-        },
-        {
-          country: "Argentina",
-          rate: 'medium',
-          diseases: [
-            {
-              rate: "medium",
-              name:
-                "Laborum reprehenderit dolor ut cillum duis nulla ut nisi.",
-              info:
-                "Veniam Lorem sit aute labore nostrud exercitation consequat anim ipsum sit dolor anim aliquip."
-            },
-            {
-              rate: "medium",
-              name: "Sint voluptate ipsum",
-              info:
-                "Fugiat cupidatat sunt dolor sunt amet fugiat labore sint et deserunt quis."
-            },
-            {
-              rate: "high",
-              name: "Eiusmod aliquip proident elit deserunt cillum.",
-              info:
-                "Tempor ipsum reprehenderit proident ex laborum sunt incididunt non veniam dolor irure duis."
-            }
-          ]
-        },
-        {
-          country: "Chile",
-          rate: 'high',
-          diseases: [
-            {
-              rate: "high",
-              name: "Ex in laboris ipsum",
-              info:
-                "Cupidatat aliquip tempor eiusmod proident in occaecat magna aliquip pariatur voluptate pariatur reprehenderit."
-            }
-          ]
-        }
-      ],
-      selectedCountry: ""
+      selectedCountry: "",
+      infos: infos_json.data,
+      observation: infos_json.observation,
+      diseaseLabel: infos_json.disease_label,
+      transmissionLabel: infos_json.transmission_label
     };
   },
   computed: {
     selectedInfo: function() {
       // console.log(this.infos);
-      let infos = this.infos;
+      let infos = this.infos || [];
 
       let selected = infos.filter(
         info => this.selectedCountry === info.country
       );
       return selected.length === 0 ? "" : selected;
+    },
+    coutriesOptions: function() {
+      let infos = this.infos || [];
+
+      let countries = infos.map(item => item.country).sort();
+      return countries;
     }
   },
   methods: {
@@ -115,6 +85,9 @@ export default {
         "badge badge-pill badge-warning": rate === "medium",
         "badge badge-pill badge-danger": rate === "high"
       };
+    },
+    referencesToString(references) {
+      return references.toString();
     }
   }
 };
